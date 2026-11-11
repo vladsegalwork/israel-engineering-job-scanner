@@ -1,0 +1,53 @@
+{
+  "name": "israel-engineering-job-scanner",
+  "version": "0.1.0",
+  "description": "Keyless scanner for public company career sites, focused on Israeli Electrical / Computer Engineering student and junior roles.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "bin": {
+    "job-scanner": "./dist/cli/scan.js"
+  },
+  "files": [
+    "dist",
+    "config",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "scan": "tsx src/cli/scan.ts",
+    "scan:example": "tsx src/cli/scan.ts --config config/sources.example.json --out jobs.json",
+    "scan:json": "tsx src/cli/scan.ts --config config/sources.example.json --json",
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "scan:built": "node dist/cli/scan.js --config config/sources.example.json --out jobs.json"
+  },
+  "keywords": [
+    "jobs",
+    "job-scraper",
+    "workday",
+    "greenhouse",
+    "lever",
+    "ats",
+    "israel",
+    "electrical-engineering",
+    "computer-engineering",
+    "student-jobs"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

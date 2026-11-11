@@ -1,0 +1,61 @@
+{
+  "max_items_per_source": 300,
+  "sources": [
+    {
+      "name": "NVIDIA",
+      "career_url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite",
+      "platform_type": "workday",
+      "enabled": true,
+      "relevant_locations": ["Israel"],
+      "options": {
+        "max_list": 600,
+        "max_details": 120
+      }
+    },
+    {
+      "name": "Intel",
+      "career_url": "https://intel.wd1.myworkdayjobs.com/External",
+      "platform_type": "workday",
+      "enabled": true,
+      "relevant_locations": ["Israel"],
+      "options": {
+        "max_list": 600,
+        "max_details": 120
+      }
+    },
+    {
+      "name": "Mobileye",
+      "career_url": "https://jobs.eu.lever.co/mobileye",
+      "platform_type": "lever",
+      "enabled": true,
+      "relevant_locations": ["Israel"]
+    },
+    {
+      "name": "Astera Labs",
+      "career_url": "https://job-boards.greenhouse.io/asteralabs",
+      "platform_type": "greenhouse",
+      "enabled": true,
+      "relevant_locations": ["Israel"]
+    },
+    {
+      "name": "Amazon",
+      "career_url": "https://www.amazon.jobs/en/",
+      "platform_type": "amazon_careers",
+      "enabled": false,
+      "relevant_locations": ["Israel"],
+      "options": {
+        "max_items": 1000
+      }
+    },
+    {
+      "name": "Google",
+      "career_url": "https://www.google.com/about/careers/applications/jobs/results",
+      "platform_type": "google_careers",
+      "enabled": false,
+      "relevant_locations": ["Israel"],
+      "options": {
+        "max_pages": 3
+      }
+    }
+  ]
+}
